@@ -14,10 +14,15 @@ public class Cat {
     }
 
     public String getFirstName() {
-        return firstName;
+        if (getPermission()) {
+            return firstName;
+        } else {
+            return "Sorry, no permission!";
+        }
+    
     }
 
-
+        // GETTER
     public String getFurColor() {
         return furColor;
     }
@@ -28,9 +33,21 @@ public class Cat {
     }
 
 
+        // SETTER
+
+        public void setAge(int age) {
+            this.age = age;
+        }
+
     public Cat getInstanceVariable(){
        return this;
     }
 
+    
+    private boolean getPermission(){
+        return true;
+        // return false;
+
+}
 
 }

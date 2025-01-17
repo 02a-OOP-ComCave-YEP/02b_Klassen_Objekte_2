@@ -19,6 +19,7 @@ public class App {
         // output("Blick von aussen: " + cat2);
         // output("Blick von innen: " + cat2.getInstanceVariable());
 
+        cat2.setAge(36); //SETTER
 
         output(cat2.getFirstName());
         output(cat2.getFurColor());

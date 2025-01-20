@@ -22,6 +22,12 @@ public class Cat {
     
     }
 
+    private boolean getPermission(){
+        return true;
+        // return false;
+
+    }
+
         // GETTER
     public String getFurColor() {
         return furColor;
@@ -44,10 +50,6 @@ public class Cat {
     }
 
     
-    private boolean getPermission(){
-        return true;
-        // return false;
 
-}
 
 }
